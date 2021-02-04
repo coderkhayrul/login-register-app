@@ -4,7 +4,7 @@
     <!-- Section -->
     <section class="d-flex align-items-center my-3 mt-lg-4 mb-lg-5">
         <div class="container">
-            <p class="text-center"><a href="../dashboard/dashboard.html" class="text-gray-700"><i class="fas fa-angle-left mr-2"></i> Back to homepage</a></p>
+            <p class="text-center"><a href="{{ route('dashboard') }}" class="text-gray-700"><i class="fas fa-angle-left mr-2"></i> Back to homepage</a></p>
             <div class="row justify-content-center form-bg-image" data-background-lg="{{ asset('backend') }}/image/signin.svg">
                 <div class="col-12 d-flex align-items-center justify-content-center">
                     <div class="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
@@ -47,26 +47,12 @@
                                     </label>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-block btn-primary">Sign in</button>
+                            <button type="submit" class="btn btn-block btn-primary">Register</button>
                         </form>
-                        <div class="mt-3 mb-4 text-center">
-                            <span class="font-weight-normal">or</span>
-                        </div>
-                        <div class="d-flex justify-content-center my-4">
-                            <a href="#" class="btn btn-icon-only btn-pill btn-outline-light text-facebook mr-2" type="button" aria-label="facebook button" title="facebook button">
-                                <span aria-hidden="true" class="fab fa-facebook-f"></span>
-                            </a>
-                            <a href="#" class="btn btn-icon-only btn-pill btn-outline-light text-twitter mr-2" type="button" aria-label="twitter button" title="twitter button">
-                                <span aria-hidden="true" class="fab fa-twitter"></span>
-                            </a>
-                            <a href="#" class="btn btn-icon-only btn-pill btn-outline-light text-facebook" type="button" aria-label="github button" title="github button">
-                                <span aria-hidden="true" class="fab fa-github"></span>
-                            </a>
-                        </div>
                         <div class="d-flex justify-content-center align-items-center mt-4">
                             <span class="font-weight-normal">
                                 Already have an account?
-                                <a href="./sign-in.html" class="font-weight-bold">Login here</a>
+                                <a href="{{ route('login') }}" class="font-weight-bold">Login here</a>
                             </span>
                         </div>
                     </div>
